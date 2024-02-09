@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faculty Page</title>
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+    
+    header {
+      background-color: #f1f0f0;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+    }
+    nav {
+      background-color: hsl(50, 78%, 57%);
+      overflow: hidden;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    nav ul li {
+      display: inline;
+    }
+    nav ul li a {
+      display: inline-block;
+      padding: 14px 20px;
+      text-decoration: none;
+      color: #fff;
+    }
+    nav ul li a:hover {
+      background-color: #f4f0f0;
+    }
+    .faculty-info {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 2em;
+    }
+    .faculty-card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 1em;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      max-width: 600px;
+    }
+    .faculty-card img {
+      max-width: 200px;
+      height: auto;
+      border-radius: 50%;
+      margin-right: 1em;
+    }
+    .faculty-card .faculty-details {
+      flex: 1;
+    }
+    @media screen and (min-width: 768px) {
+      .faculty-info {
+        width: 100%;
+      }
+      .faculty-card {
+        max-width: 45%;
+        margin: 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <ul>
+      <li><img scr = "./assets/images/image0.jpg" alt =""></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="faculty-info">
+    <div class="faculty-card">
+      <img src="faculty_image.jpg" alt="Faculty Image">
+      <div class="faculty-details">
+        <h2>Faculty Name</h2>
+        <p>Role: Faculty Chapter Coordinator</p>
+        <p>Department: Computer Science</p>
+        <p>Office: Room 123</p>
+        <p>Email: faculty@example.com</p>
+        <p>Phone: 123-456-7890</p>
+        <p>Message for Students: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <!-- Add more details if needed -->
+      </div>
+    </div>
+  </section>
+
+  <section class="faculty-info">
+    <div class="faculty-card">
+      <img src="another_faculty_image.jpg" alt="Another Faculty Image">
+      <div class="faculty-details">
+        <h2>Another Faculty Name</h2>
+        <p>Role: Assistant Professor</p>
+        <p>Department: Mathematics</p>
+        <p>Office: Room 234</p>
+        <p>Email: another_faculty@example.com</p>
+        <p>Phone: 987-654-3210</p>
+        <p>Message for Students: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <!-- Add more details if needed -->
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
